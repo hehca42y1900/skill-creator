@@ -11,6 +11,7 @@ This repository hosts Claude Code project skills under `.claude/skills/`. Becaus
 | `mcp-builder` | Guide for creating high-quality MCP (Model Context Protocol) servers in Python (FastMCP) or Node/TypeScript. | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills/tree/main/mcp-builder) |
 | `avoid-ai-writing` | Audits and rewrites text to remove "AI-isms" — detect-only, edit-in-place, and voice-profile modes with an iterate-to-convergence pass. | [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) |
 | `naming` | Metaphor-driven process for naming products, brands, SaaS tools, and open source projects, with availability checks and an anti-slop evaluation rubric. | [glacierphonk/naming](https://github.com/glacierphonk/naming) |
+| `marketer-assistant` | Маркетолог-ассистент: анализ конкурентов, портрет ЦА, УТП/оффер, каналы и прогноз эффективности рекламы; включает system prompt и минимальный пример на Claude API. | This repository |
 
 ## Layout
 
@@ -20,6 +21,7 @@ This repository hosts Claude Code project skills under `.claude/skills/`. Becaus
 .claude/skills/mcp-builder/         SKILL.md + reference/scripts
 .claude/skills/avoid-ai-writing/    SKILL.md
 .claude/skills/naming/              SKILL.md + reference files, industries/, languages/, scripts/, templates/
+.claude/skills/marketer-assistant/  SKILL.md + reference/api-app.md (Claude API system prompt + code)
 ```
 
 Just describe what you want (e.g. "help me create a skill for X", "style this artifact with our brand colors", "help me build an MCP server for X", "clean up the AI-isms in this doc", "help me name this project") and Claude will use the relevant skill.
