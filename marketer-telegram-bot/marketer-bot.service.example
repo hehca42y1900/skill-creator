@@ -1,0 +1,17 @@
+[Unit]
+Description=Marketer assistant Telegram bot
+After=network.target
+
+[Service]
+Type=simple
+# Замените на реальный путь к папке бота на сервере, например /home/deploy/skill-creator/marketer-telegram-bot
+WorkingDirectory=/opt/marketer-telegram-bot
+# Замените на реального пользователя сервера (не root)
+User=deploy
+ExecStart=/opt/marketer-telegram-bot/venv/bin/python /opt/marketer-telegram-bot/bot.py
+Restart=on-failure
+RestartSec=5
+EnvironmentFile=/opt/marketer-telegram-bot/.env
+
+[Install]
+WantedBy=multi-user.target
